@@ -284,7 +284,7 @@ def nextBags():
 ##        else:
 ##            nextBags()
 
-while i <= len(files)-1:
+while i < len(files):
         # gets the mt number and bag size from pdf name
     MTnumber = int(re.search(r'\d{6}',files[i]).group())
     packSize = re.search(r'\d?\.?\d?#',files[i]).group()
